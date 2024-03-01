@@ -93,11 +93,7 @@ modules:
         url: https://gitlab.gnome.org/GNOME/gtk.git
         tag: 2.24.33
     cleanup:
-      - /bin/openssl
       - /share/gtk-2.0/demo
-      - /lib/pkgconfig
-      - /lib/debug
-      - /include
       - /bin/gtk-demo
   - name: openssl
     buildsystem: simple
@@ -109,10 +105,6 @@ modules:
       - type: git
         url: https://github.com/openssl/openssl.git
         tag: *openssl-tag
-    cleanup:
-      - /lib/pkgconfig
-      - /lib/debug
-      - /include
   - name: rs3-client
     buildsystem: simple
     build-commands:
