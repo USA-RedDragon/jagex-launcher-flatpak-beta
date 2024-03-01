@@ -263,3 +263,4 @@ modules:
         path: resources/com.jagex.Launcher.desktop
       - type: file
         path: resources/com.jagex.Launcher.metainfo.xml
+
