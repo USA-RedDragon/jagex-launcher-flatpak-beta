@@ -28,7 +28,7 @@
     <release version="0.29.1" date="2023-11-26"></release>
   </releases>
   <screenshots>
-    <screenshot type="default">https://jagexlauncher.flatpak.mcswain.dev/screenshot.png</screenshot>
+    <screenshot type="default">https://jagexlauncher-beta.flatpak.mcswain.dev/screenshot.png</screenshot>
   </screenshots>
   <content_rating type="oars-1.1">
     <content_attribute id="violence-cartoon">moderate</content_attribute>

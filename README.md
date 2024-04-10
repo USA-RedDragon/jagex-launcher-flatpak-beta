@@ -1,4 +1,4 @@
-# Jagex Launcher Linux Flatpak
+# Jagex Launcher Linux Flatpak (Beta)
 
 This is a Flatpak package for the Jagex Launcher on Linux Systems. It packages the official upstream Wine at the latest version, RuneLite, HDOS, and the Jagex Launcher.
 
@@ -12,27 +12,27 @@ You can install it by adding the remote and installing it with the following com
 
 ```bash
 flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-flatpak remote-add --user --if-not-exists JagexLauncher https://jagexlauncher.flatpak.mcswain.dev/JagexLauncher.flatpakrepo
+flatpak remote-add --user --if-not-exists JagexLauncherBeta https://jagexlauncher-beta.flatpak.mcswain.dev/JagexLauncher.flatpakrepo
 # Required for 32-bit compatibility. Jagex Launcher is 32-bit.
 flatpak install --user flathub org.freedesktop.Platform.Compat.i386/x86_64/23.08
 flatpak install --user flathub org.freedesktop.Platform.GL32.default/x86_64/23.08
 # Install the launcher itself
-flatpak install --user JagexLauncher com.jagex.Launcher
+flatpak install --user JagexLauncherBeta com.jagex.Launcher
 # Install RuneLite (if desired)
-flatpak install --user JagexLauncher com.jagex.Launcher.ThirdParty.RuneLite
+flatpak install --user JagexLauncherBeta com.jagex.Launcher.ThirdParty.RuneLite
 # Install HDOS (if desired)
-flatpak install --user JagexLauncher com.jagex.Launcher.ThirdParty.HDOS
+flatpak install --user JagexLauncherBeta com.jagex.Launcher.ThirdParty.HDOS
 ```
 
 You can also use the install script which manages the remote and installs the Flatpak, including Nvidia drivers if needed. Note this does NOT install RuneLite or HDOS:
 
 ```bash
-curl -fSsL https://raw.githubusercontent.com/USA-RedDragon/jagex-launcher-flatpak/main/install.sh | bash
+curl -fSsL https://raw.githubusercontent.com/USA-RedDragon/jagex-launcher-flatpak-beta/main/install.sh | bash
 
 # Install RuneLite (if desired)
-flatpak install --user JagexLauncher com.jagex.Launcher.ThirdParty.RuneLite
+flatpak install --user JagexLauncherBeta com.jagex.Launcher.ThirdParty.RuneLite
 # Install HDOS (if desired)
-flatpak install --user JagexLauncher com.jagex.Launcher.ThirdParty.HDOS
+flatpak install --user JagexLauncherBeta com.jagex.Launcher.ThirdParty.HDOS
 ```
 
 ### Nvidia GPU Drivers
@@ -120,7 +120,7 @@ After the required packages are installed the project can be built with:
 
 ## Screenshots
 
-<img width="50%" src="https://jagexlauncher.flatpak.mcswain.dev/screenshot.png" alt="Screenshot of the Jagex Launcher and all 4 RuneScape clients open"></img>
+<img width="50%" src="https://jagexlauncher-beta.flatpak.mcswain.dev/screenshot.png" alt="Screenshot of the Jagex Launcher and all 4 RuneScape clients open"></img>
 
 ## Why no Alt1 Toolkit?
 

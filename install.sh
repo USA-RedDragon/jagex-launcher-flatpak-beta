@@ -13,7 +13,7 @@ if [[ -f /proc/driver/nvidia/version ]]; then
 fi
 
 flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-flatpak remote-add --user --if-not-exists JagexLauncher https://jagexlauncher.flatpak.mcswain.dev/JagexLauncher.flatpakrepo
+flatpak remote-add --user --if-not-exists JagexLauncherBeta https://jagexlauncher-beta.flatpak.mcswain.dev/JagexLauncher.flatpakrepo
 
 flatpak install --user -y --noninteractive flathub \
     org.freedesktop.Platform//${FREEDESKTOP_SDK_VERSION} \
@@ -26,4 +26,4 @@ if [[ ${HAS_NVIDIA} -eq 1 ]]; then
         org.freedesktop.Platform.GL32.nvidia-${NVIDIA_VERISON}/x86_64
 fi
 
-flatpak install --or-update --user -y --noninteractive JagexLauncher com.jagex.Launcher
+flatpak install --or-update --user -y --noninteractive JagexLauncherBeta com.jagex.Launcher
