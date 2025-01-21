@@ -160,9 +160,9 @@ modules:
       - cp -r .* ${FLATPAK_DEST}/Jagex\ Launcher
     sources:
       - type: archive
-        url: https://github.com/USA-RedDragon/jagex-launcher/releases/download/1.5.0/launcher-1.5.0.tar.gz
+        url: https://github.com/USA-RedDragon/jagex-launcher/releases/download/1.6.0/launcher-1.6.0.tar.gz
         archive-type: tar-gzip
-        sha256: 0c39f1d80ea46762b2c3a73fda84651709642c28e25809b5cabeb9c3ccf40b20
+        sha256: 2849a9f3bf95e0b28ef2f8104ad8476758819cf87f4fa0c1257ca75a4bf921bc
   - name: bundle-setup
     buildsystem: simple
     post-install:
