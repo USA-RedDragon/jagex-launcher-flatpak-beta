@@ -1,7 +1,7 @@
 # Versions
-x-runtime-version: &runtime-version '23.08'
+x-runtime-version: &runtime-version '24.08'
 x-gl-version: &gl-version '1.4'
-x-gl-versions: &gl-versions 23.08;1.4
+x-gl-versions: &gl-versions 24.08;1.4
 x-wine-version: &wine-version 'wine-8.20'
 x-openssl-tag: &openssl-tag 'OpenSSL_1_1_1w'
 # Flatpak manifest
